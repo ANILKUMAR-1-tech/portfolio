@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="styles.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="../../fontawesome/fontawesome-free-6.7.1-web/css/all.min.css">
+</head>
+
+<body>
+
+  <nav class="navbar fixed-top navbar-expand-md">
+    <div class="container">
+      <a class="navbar-brand" href="#home">Anil Kumar</a>
+
+      <!-- Toggle for small screens only -->
+      <button class="navbar-toggler d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Inline nav-links for md and larger -->
+      <div class="d-none d-md-flex ms-auto">
+        <ul class="navbar-nav flex-row gap-3 mb-0">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Offcanvas for mobile -->
+  <div class="offcanvas offcanvas-end custom-offcanvas" tabindex="-1" id="mobileNav">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title">Menu</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+
+
+  <section id="home" class="p-5  w-100 mt-5">
+    <div class="container d-flex">
+      <div class="row align-items-center">
+        <!-- Profile Photo -->
+        <div class="col-md-4 text-center">
+          <img src="images/profile-removebg-preview.png" alt="Anil Kumar Profile Photo" class="img-fluid" width="400"
+            height="400">
+        </div>
+        <!-- Bio Content -->
+        <div class="col-md-8 text-md-start mt-3 text-center">
+          <span class="fw-bold">Hi, I'm</span>
+          <h1 class="display-4">Anil Kumar</h1>
+          <p class="lead fw-bold">Java Full Stack Developer | Spring Boot & Hibernate Enthusiast</p>
+          <p class="mt-3">
+            I’m an enthusiastic and detail-oriented Java Full Stack Developer, trained in developing web applications
+            using
+            <strong>Spring Boot, Hibernate, HTML, CSS, JavaScript</strong>, and <strong>PostgreSQL</strong>.
+            I enjoy building backend APIs, creating clean UIs, and learning emerging tech stacks.
+          </p>
+          <a href="#about" class="btn btn-warning mt-3">Learn More About Me</a>
+
+
+
+          <div class="row mt-4">
+            <div class="col-md-8 offset-md-2 col-lg-8 offset-lg-0 social">
+              <!-- Social Media Icons -->
+              <div
+                class="d-flex flex-wrap justify-content-center justify-content-lg-start align-items-center gap-3 mb-3">
+                <a href="www.linkedin.com/in/anilkumarnagisetty" target="_blank"
+                  class="me-2 text-decoration-none social-icon">
+                  <i class="bi bi-linkedin" style="font-size: 1.5rem;"></i>
+                </a>
+                <a href="https://github.com/ANILKUMAR-1-tech" target="_blank"
+                  class="me-2 text-decoration-none social-icon">
+                  <i class="bi bi-github" style="font-size: 1.5rem;"></i>
+                </a>
+              </div>
+
+              <!-- CV & Contact Buttons -->
+              <div class="d-flex flex-column flex-sm-row justify-content-lg-start gap-2">
+                <a href="files/Anilkumar_CV.pdf" class="btn btn-outline-primary me-2" download>Download CV</a>
+                <a href="#contact" class="btn btn-outline-success"
+                  onclick="window.location.href='tel:+918520016198'">Contact Me</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="py-5 bg-light reveal">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2>About Me</h2>
+        <span>Professional Summary</span>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-md-10 info-box">
+          <p>
+            I’m a detail-oriented and passionate <strong>Java Full Stack Developer</strong> with hands-on experience in
+            building dynamic web applications using <strong>Spring Boot, Hibernate, HTML, CSS, JavaScript, and
+              PostgreSQL</strong>. I have been trained under real-time project environments that emphasize clean code,
+            scalable architecture, and REST API integration.
+          </p>
+
+          <p>
+            I’ve completed multiple CRUD-based projects that follow industry-standard MVC design patterns and backend
+            validations. My core strengths lie in <strong>backend development, database management, and responsive UI
+              design</strong>. I’m also comfortable using tools like Git, Postman, and Eclipse/VS Code.
+          </p>
+
+          <p>
+            I enjoy learning emerging technologies and take pride in writing well-structured code. Currently, I’m
+            exploring deployment, CI/CD practices, and expanding my knowledge in cloud services.
+          </p>
+
+          <!-- Replaced list with styled paragraphs -->
+          <div class="mt-3">
+            <p><strong>✔️</strong> Strong understanding of Java, OOP principles, and backend logic.</p>
+            <p><strong>✔️</strong> Solid foundation in building RESTful APIs with Spring Boot and Hibernate.</p>
+            <p><strong>✔️</strong> Confident in front-end using HTML5, CSS3, JavaScript, and Bootstrap.</p>
+            <p><strong>✔️</strong> Experience with PostgreSQL and writing efficient SQL queries.</p>
+            <p><strong>✔️</strong> Effective communicator, quick learner, and enthusiastic problem solver.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <section id="experience" class="py-5 pb-5">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2>Experience</h2>
+        <span>My Professional Journey</span>
+      </div>
+
+      <div class="row justify-content-center">
+        <!-- Experience Card 1 -->
+        <div class="col-md-5 info-box equal-box mb-4 mx-2">
+          <h5>Java Full Stack Trainee</h5>
+          <p class="mb-1"><strong>JSPIDERS, Bengaluru</strong></p>
+          <p class="text-muted">Oct 2024 – May 2025</p>
+          <ul class="text-start">
+            <li>Hands-on training in Java, Spring Boot, Hibernate, HTML, CSS, and JavaScript.</li>
+            <li>Built CRUD-based full-stack applications with REST API integration.</li>
+            <li>Practiced real-time MVC architecture and backend database operations using PostgreSQL.</li>
+          </ul>
+        </div>
+
+        <!-- Experience Card 2 -->
+        <div class="col-md-5 info-box equal-box mb-4 mx-2">
+          <h5>Academic Project – Smart Transportation Alert System</h5>
+          <p class="mb-1"><strong>JNTUA (ECE)</strong></p>
+          <p class="text-muted">2022 – 2023</p>
+          <ul class="text-start">
+            <li>Developed an IoT-based system to detect drowsy driving and road hazards.</li>
+            <li>Integrated sensors with microcontrollers for real-time monitoring.</li>
+            <li>Triggered buzzer and LED alerts upon detecting driver fatigue or obstacles.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="projects" class="py-5 pb-5 w-100">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2>Projects</h2>
+        <span>Some of My Work</span>
+      </div>
+
+      <div class="row justify-content-center">
+
+        <!-- Project 1 -->
+        <div class="col-md-4 mb-4">
+          <div class="info-box h-100">
+            <h5>Flight Booking App</h5>
+            <p class="text-muted">Spring Boot | REST API | PostgreSQL</p>
+            <p>
+              Built a full-stack flight booking system with user registration, flight listing, booking logic, and
+              database integration using Spring Boot and PostgreSQL.
+            </p>
+            <a href="https://github.com/yourusername/flight-booking-app" class="btn btn-outline-primary btn-sm"
+              target="_blank">
+              View on GitHub
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="col-md-4 mb-4">
+          <div class="info-box h-100">
+            <h5>Student Management System</h5>
+            <p class="text-muted">Spring MVC, Hibernate, JSP</p>
+            <ul class="text-start">
+              <li>Built a web app to manage student profiles, marks, and attendance.</li>
+              <li>Used Hibernate Criteria for dynamic queries and filtering.</li>
+              <li>Implemented pagination for large datasets.</li>
+            </ul>
+            <a href="https://yourportfolio.com" class="btn btn-outline-primary btn-sm" target="_blank">
+              Live Demo
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="col-md-4 mb-4">
+          <div class="info-box h-100">
+            <h5 class="mt-5">Todo App</h5>
+            <p class="text-muted">JavaScript | LocalStorage</p>
+            <p>
+              Simple and interactive todo list app with local storage persistence and filtering functionality.
+            </p>
+            <a href="https://github.com/yourusername/todo-app" class="btn btn-outline-primary btn-sm" target="_blank">
+              View on GitHub
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section id="contact" class="pt-5 pb-5">
+    <div class="container">
+      <div class="text-center mb-4">
+        <h2>Contact</h2>
+        <span>Get in Touch</span>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-md-6 text-center">
+          <p class="mb-2"><i class="bi bi-envelope-fill text-primary me-2"></i><strong>Email:</strong>
+            <a class="text-decoration-none"
+              href="mailto:anilkumarnagisetyy0045@gmail.com">anilkumarnagisetyy0045@gmail.com</a>
+          </p>
+          <p class="mb-2"><i class="bi bi-phone-fill text-success me-2"></i><strong>Phone:</strong> +91 85200 16198</p>
+          <p class="mb-2"><i class="bi bi-geo-alt-fill text-danger me-2"></i><strong>Location:</strong> Bengaluru,
+            Karnataka, India</p>
+
+          <!-- Optional Contact Buttons -->
+          <div class="d-flex justify-content-center gap-3 mt-3">
+            <a href="mailto:anilkumarnagisetyy0045@gmail.com" class="btn btn-outline-primary">
+              <i class="bi bi-envelope-fill me-1"></i> Email Me
+            </a>
+            <a href="tel:+918520016198" class="btn btn-outline-success">
+              <i class="bi bi-telephone-fill me-1"></i> Call Now
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <footer class="bg-secondary text-dark py-4 mt-auto">
+    <div class="container text-center">
+      <div class="row mb-3">
+
+        <!-- Social Links -->
+        <div class="col-12 mb-3 d-flex justify-content-center gap-3">
+          <a href="https://github.com/ANILKUMAR-1-tech" target="_blank" class="text-white me-3 social-icon">
+            <i class="bi bi-github" style="font-size: 1.4rem;"></i>
+          </a>
+          <a href="www.linkedin.com/in/anilkumarnagisetty" target="_blank" class="text-white me-3 social-icon">
+            <i class="bi bi-linkedin" style="font-size: 1.4rem;"></i>
+          </a>
+          <a href="mailto:anilkumarnagisetty0045@gmail.com" class="text-white me-3 social-icon">
+            <i class="bi bi-envelope" style="font-size: 1.4rem;"></i>
+          </a>
+          <a href="tel:+918520016198" class="text-white social-icon">
+            <i class="bi bi-telephone" style="font-size: 1.4rem;"></i>
+          </a>
+        </div>
+
+        <!-- Copyright -->
+        <div class="col-12">
+          <small>&copy; 2025 Anil Kumar. All rights reserved.</small>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <script src="functions.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
